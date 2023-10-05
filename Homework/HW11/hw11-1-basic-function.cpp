@@ -10,5 +10,33 @@
             5
     Output:
         Summation = 12 (Calculate by Additional Function)
-*/
+*/#include <stdio.h>
+
+// สร้างฟังก์ชันเพื่อหาผลรวมของจำนวน 3 ค่า
+int calculateSum(int num1, int num2, int num3) {
+    return num1 + num2 + num3;
+}
+
+int main() {
+    int input1, input2, input3;
+    
+    // รับค่าจากผู้ใช้
+    printf("Input 1 : ");
+    scanf("%d", &input1);
+    
+    printf("Input 2 : ");
+    scanf("%d", &input2);
+    
+    printf("Input 3 : ");
+    scanf("%d", &input3);
+    
+    // เรียกใช้งานฟังก์ชันเพื่อหาผลรวม
+    int result = calculateSum(input1, input2, input3);
+    
+    // แสดงผลลัพธ์บนหน้าจอ
+    printf("Summation = %d (Calculate by Additional Function)\n", result);
+    
+    return 0;
+}
+
 
